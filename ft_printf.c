@@ -6,7 +6,7 @@
 /*   By: imatakis <imatakis@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:57:54 by imatakis          #+#    #+#             */
-/*   Updated: 2024/03/11 19:23:40 by imatakis         ###   ########.fr       */
+/*   Updated: 2024/03/11 21:07:06 by imatakis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,5 @@ int ft_printf(const char *s, ...)
     }
     va_end(args);
     return (count);
+    
 }

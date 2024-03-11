@@ -6,7 +6,7 @@
 /*   By: imatakis <imatakis@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:56:52 by imatakis          #+#    #+#             */
-/*   Updated: 2024/03/11 19:25:29 by imatakis         ###   ########.fr       */
+/*   Updated: 2024/03/11 21:09:54 by imatakis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int	print_nbr(int n);
 int	print_str(const char *str);
 int	print_hex(unsigned int n, char c);
 int	print_ptr(uintptr_t n);
+
 
 #endif
