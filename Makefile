@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: imatakis <@student.42abudhabi.ae>          +#+  +:+       +#+         #
+#    By: imatakis <imatakis@student.42abudhabi.a    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/01 23:04:26 by imatakis          #+#    #+#              #
-#    Updated: 2024/03/10 02:46:40 by imatakis         ###   ########.fr        #
+#    Updated: 2024/03/11 16:30:43 by imatakis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

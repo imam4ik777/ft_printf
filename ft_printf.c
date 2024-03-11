@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: imatakis <@student.42abudhabi.ae>          +#+  +:+       +#+        */
+/*   By: imatakis <imatakis@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 19:57:54 by imatakis          #+#    #+#             */
-/*   Updated: 2024/03/10 02:55:34 by imatakis         ###   ########.fr       */
+/*   Updated: 2024/03/11 19:23:40 by imatakis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int converter(va_list args, const char c)
+static int  converter(va_list args, const char c)
 {
     int count;
 
@@ -28,7 +28,7 @@ static int converter(va_list args, const char c)
     else if (c == 'x' || c == 'X')
         count += print_hex(va_arg(args, unsigned int), c);
     else if (c == 'p')
-        count += print_ptr(va_arg(args, unsigned int));
+        count += print_ptr(va_arg(args, uintptr_t));
     else if (c == '%')
         count += print_char(c);
     return (count);
@@ -40,6 +40,8 @@ int ft_printf(const char *s, ...)
     int count;
     va_list args;
 
+    if (!s)
+		return (0);
     i = 0;
     count = 0;
     va_start(args, s);

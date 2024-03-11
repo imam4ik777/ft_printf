@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_str.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: imatakis <@student.42abudhabi.ae>          +#+  +:+       +#+        */
+/*   By: imatakis <imatakis@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 20:01:47 by imatakis          #+#    #+#             */
-/*   Updated: 2024/03/08 21:16:27 by imatakis         ###   ########.fr       */
+/*   Updated: 2024/03/11 18:21:57 by imatakis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,18 @@
 
 int	print_str(const char *str)
 {
-	int count;
+	int i;
 
-	count = 0;
+	i = 0;
 	if (!str)
-		return (print_char(str[count]));
-	while (str[count])
 	{
-		print_char(str[count]);
-		count++;
+		write(1, "(null)", 6);
+		return (6);
 	}
-	return (count);
+	while (str[i])
+	{
+		print_char(str[i]);
+		i++;
+	}
+	return (i);
 }
