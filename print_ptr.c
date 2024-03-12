@@ -14,7 +14,7 @@
 
 static int	put_pointer(uintptr_t n, char *s)
 {
-	int 	count;
+	int	count;
 
 	count = 0;
 	if (n >= 16)
@@ -25,7 +25,7 @@ static int	put_pointer(uintptr_t n, char *s)
 
 int	print_ptr(uintptr_t n)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	print_str("0x");

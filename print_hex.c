@@ -15,7 +15,7 @@
 int	print_hex(unsigned int n, char c)
 {
 	char	*hex;
-	int 	count;
+	int		count;
 
 	count = 1;
 	if (c == 'x')

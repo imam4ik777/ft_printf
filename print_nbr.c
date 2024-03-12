@@ -14,7 +14,7 @@
 
 int	print_nbr(int n)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (n == INT_MIN)
@@ -25,7 +25,7 @@ int	print_nbr(int n)
 	else if (n < 0)
 	{
 		count += write(1, "-", 1);
-		count += print_nbr(n  * -1);
+		count += print_nbr(n * -1);
 	}
 	else
 	{
